@@ -1,0 +1,22 @@
+.gridContainer{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+        header{grid-area:header;
+            .logo{padding:20px;
+                h3{
+                    font:{
+                        size:2rem;
+                        family:'tahoma';
+                    }
+                    color:blue;
+                }
+            }
+        }
+        main{grid-area:main;}
+        footer{grid-area:footer;}
+}
