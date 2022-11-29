@@ -1,1 +1,23 @@
 h1{color:blue;font-size:2rem;background-color: lightcoral;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.gridContainer{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,auto);
+        header{grid-area:header;
+            .logo{padding:20px;
+                h3{
+                    font:{
+                        size:2rem;
+                        family:'tahoma';
+                    }
+                    color:blue;
+                }
+            }
+        }
+        main{grid-area:main;}
+        footer{grid-area:footer;}
+}

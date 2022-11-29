@@ -3,3 +3,21 @@ h1 {
   font-size: 2rem;
   background-color: lightcoral;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto); }
+  .gridContainer header {
+    grid-area: header; }
+    .gridContainer header .logo {
+      padding: 20px; }
+      .gridContainer header .logo h3 {
+        font-size: 2rem;
+        font-family: 'tahoma';
+        color: blue; }
+  .gridContainer main {
+    grid-area: main; }
+  .gridContainer footer {
+    grid-area: footer; }
