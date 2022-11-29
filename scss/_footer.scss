@@ -1,4 +1,7 @@
 footer{
+    @media only screen and (max-width:768px){
+        background-color:black;
+    }
     background-color:yellow;
     padding:{
         top:5px;
@@ -10,6 +13,9 @@ footer{
         padding:5px;
         h3{
             font-size:2rem;
+            @media only screen and (max-width:768px){
+                font-size:1.6rem;
+            }
         }
     }
     .rrss{

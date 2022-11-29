@@ -13,10 +13,12 @@
                         size:2rem;
                         family:'tahoma';
                     }
-                    color:blue;
+                    color:$azul;
                 }
             }
         }
         main{grid-area:main;}
         footer{grid-area:footer;}
 }
+
+.textoPrincipal{font-size:5rem;color:black;}
