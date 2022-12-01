@@ -32,7 +32,11 @@ header {
       list-style-type: none; }
       header nav ul li a {
         text-decoration: none;
-        font-size: 1.3rem; }
+        font-size: 1.3rem;
+        transition: all 2s; }
+        header nav ul li a:hover {
+          /* a:hover */
+          background-color: aquamarine; }
 
 footer {
   background-color: yellow;
@@ -52,3 +56,6 @@ footer {
           font-size: 1.6rem; } }
   footer .rrss h3 {
     color: violet; }
+
+.gridContainer {
+  width: 50%; }
