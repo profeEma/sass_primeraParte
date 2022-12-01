@@ -1,0 +1,20 @@
+// DECLARAR UN MIXIN CON PARAMETRO
+@mixin estiloFuente($color, $tamanioFuente, $alineacion){
+    color:$color;
+    font-size:$tamanioFuente;
+    text-align:$alineacion;
+}
+// USAR MIXIN CON PARAMETRO
+h1{
+    @include estiloFuente(green, 2rem, center);
+}
+// DECLARAMOS MIXI SIN PARAMETRO
+@mixin flex-row-center{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+// USAR MIXIN SIN PARAMETRO
+.flexRowCenter{
+    @include flex-row-center;
+}
