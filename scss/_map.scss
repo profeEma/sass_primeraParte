@@ -1,0 +1,26 @@
+$paletaColores:(
+    primario:#fff,
+    secundario:black,
+    terciario:lightgrey
+);
+
+@each $importancia, $color in $paletaColores{
+    .color-#{$importancia}{
+        padding:5px;
+        color:$color;
+    }
+}
+
+$estilos:(
+    color:#3673D9,
+    centro: center,
+    tFuente: 2rem,
+    p5:50px,
+    m5:50px
+);
+div{
+    background-color: map-get($estilos,color);
+    text-align:map-get($estilos,centro);
+    color:map-get($paletaColores,primario);
+    margin:map-get($estilos, m5);
+}

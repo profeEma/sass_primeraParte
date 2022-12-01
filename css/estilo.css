@@ -87,3 +87,21 @@ h2 {
 
 .familiaTipografia-arial {
   font-family: arial; }
+
+.color-primario {
+  padding: 5px;
+  color: #fff; }
+
+.color-secundario {
+  padding: 5px;
+  color: black; }
+
+.color-terciario {
+  padding: 5px;
+  color: lightgrey; }
+
+div {
+  background-color: #3673D9;
+  text-align: center;
+  color: #fff;
+  margin: 50px; }
